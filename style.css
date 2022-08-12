@@ -1,0 +1,100 @@
+
+.container {
+  width: 100vh;
+  height: 100vh;
+  background-color: aliceblue;
+ 
+}
+#stopwatch-table {
+ 
+  display: inline-block;
+  border-radius: 5px;
+  background-color: aliceblue;
+  font-size: 1em;
+  padding: 10% 10%;
+}
+#timer-table-time {
+  text-align: center;
+}
+#stopwatch-table td {
+
+  height: 120px;
+}
+
+.timer-table-row-time {
+  width: 250px;
+  text-align: center;
+}
+.timer-table-row-btns {
+  width: 290px;
+  padding-left: 3%;
+}
+.container button {
+  height: 100px;
+  width: 90px;
+  margin: auto;
+  
+
+	border-radius: 60%;
+
+	border: 1.4px solid #EFEBE9;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 1.5em;
+	text-decoration: none;
+	text-shadow: 0px .5px 0px #E8F5E9;
+  outline: none;
+}
+
+.container button:active {
+	position: relative;
+	top: 1px;
+ background-color: teal;
+}
+.time {
+  margin: auto;
+}
+.time-digits {
+  font-size: 3.0em;
+}
+.stopwatch-time-digits {
+  position: absolute;
+  margin: -27px auto auto -118px;
+}
+#stopwatch-master {
+  
+  display: none;
+  position: absolute;
+  margin: 20px auto auto 62px;
+  font-size: 1.8em;
+}
+
+#laps-list {
+  display: none;
+  max-height: 340px;
+  width: 500px;
+  overflow:visible;
+  font-size: 1.4em;
+  top: 0;
+  vertical-align: top;
+  overflow-x: hidden;
+ 
+}
+
+#lap-times{
+  list-style-type: numerical;
+  margin-top: 0;
+}
+
+
+.blink-text {
+  animation: blinker 0.2s linear 1;
+}
+.blink-text-pause {
+  animation: blinker 0.15s linear 1;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
