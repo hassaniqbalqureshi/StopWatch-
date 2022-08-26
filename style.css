@@ -35,12 +35,28 @@
   text-decoration: none;
   text-shadow: 0px 0.5px 0px #e8f5e9;
   outline: none;
+  background-color: white;
+}
+button:disabled {
+  border: 1px solid #b7b8b9;
+  background-color: white;
+  color: #b7b8b9;
+}
+button {
+  color: #b7b8b9;
 }
 
 .container button:active {
   position: relative;
   top: 1px;
-  background-color: teal;
+}
+button:focus {
+  outline: none;
+  background-color: #18a69d;
+  color: white;
+}
+button:hover {
+  opacity: 0.7;
 }
 .time {
   margin: auto;
@@ -62,23 +78,29 @@
 }
 
 #laps-list {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
   position: relative;
   margin-left: 500px;
   max-height: 340px;
-  width: 300px;
-  overflow: visible;
-  font-size: 1.2em;
-  top: 1px;
-  vertical-align: top;
- 
 
+  overflow: visible;
+  font-size: 1.5em;
+  top: 2px;
+  vertical-align: top;
 }
 
 #lap-times {
+  color: #696464;
+  display: flex;
+  flex-direction: column;
   list-style-type: numerical;
   margin-top: 0;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  font-size: 1.6rem;
 }
 
 .blink-text {
